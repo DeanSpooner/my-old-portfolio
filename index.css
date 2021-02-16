@@ -35,9 +35,10 @@ a {
 }
 
 img {
-  width: 64px;
+  background-color: #83b1a8;
   border: #83b1a8 10px solid;
   border-radius: 50%;
+  width: 64px;
 }
 
 .dean2 {
