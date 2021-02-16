@@ -9,13 +9,17 @@ body {
 }
 
 .header,
-.hobbies {
+.hobbies, .footer {
   background-color: #59405c;
   width: 100%;
   margin: 0;
   padding: 0.5rem 0;
   position: relative;
   top: 0;
+}
+
+.header {
+  padding: 0.5rem 0 4rem;
 }
 
 h1 {
@@ -37,11 +41,17 @@ img {
 }
 
 .dean2 {
-  bottom: 1.5rem;
+  bottom: 3.5rem;
   display: block;
   margin: auto;
   position: relative;
   width: 12.5%;
+}
+
+.haj {
+  bottom: 1rem;
+  font-size: 3rem;
+  position: relative;
 }
 
 p {
@@ -64,7 +74,7 @@ hr {
   width: 30%;
 }
 
-.hobbies-line {
+.hobbies-line, .footer-line {
   bottom: 1.3rem;
 }
 
