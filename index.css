@@ -1,37 +1,104 @@
 body {
-    background-color: #586f83;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #586f83;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.header {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    background-color: #59405c;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-    padding: 0.5rem 0;
-    position: relative;
-    top: 0;
-    text-align: center;
-    
-  }
+.header,
+.hobbies {
+  background-color: #59405c;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  top: 0;
+}
 
-  .dean2 {
-      border: #83b1a8 10px solid;
-      border-radius: 50%;
-      bottom: 1.5rem;
-      display: block;
-      margin: auto;
-      position: relative;
-      width: 12.5%;
-  }
+h1 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
 
-  hr {background-color: #586f83;
-      border: dotted 10px #83b1a8;
-      border-style: none none dotted;
-      width: 30%
-  }
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+img {
+  width: 64px;
+  border: #83b1a8 10px solid;
+  border-radius: 50%;
+}
+
+.dean2 {
+  bottom: 1.5rem;
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 12.5%;
+}
+
+p {
+  padding: 1rem;
+}
+
+h2 {
+  padding-bottom: 1rem;
+}
+
+ul {
+  text-align: justify;
+}
+
+hr {
+  background-color: #586f8300;
+  border: dotted 10px #83b1a8;
+  border-style: none none dotted;
+  position: relative;
+  width: 30%;
+}
+
+.hobbies-line {
+  bottom: 1.3rem;
+}
+
+.contact-line {
+  bottom: 0.8rem;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.link {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  margin: 20px auto;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.box {
+  background-color: #59405c;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
