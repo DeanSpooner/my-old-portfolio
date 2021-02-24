@@ -166,3 +166,19 @@ hr {
   transition-property: transform, background;
   transition-duration: 0.3s;
 }
+
+form {
+  display: table;
+  margin: auto;
+}
+
+.table-row {
+  display: table-row;
+  text-align: right;
+}
+
+input, label, textarea {
+  display: table-cell;
+  padding: 0 1rem;
+  width: 12rem;
+}
