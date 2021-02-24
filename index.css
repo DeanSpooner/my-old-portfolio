@@ -8,8 +8,7 @@ body {
   text-align: center;
 }
 
-.header,
-.hobbies, .footer {
+.header, .footer {
   background-color: #59405c;
   width: 100%;
   margin: 0;
@@ -32,6 +31,15 @@ h1 {
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+.link {
+  padding: 0 1rem;
+}
+
+.current {
+  background-color: #654269;
+  border-radius: 40%;
 }
 
 img {
@@ -82,11 +90,11 @@ hr {
   width: 60%
 }
 
-.hobbies-line, .footer-line {
+ .footer-line {
   bottom: 1.3rem;
 }
 
-.contact-line {
+.hobbies-line, .contact-line, .links-line {
   bottom: 0.8rem;
 }
 
@@ -140,4 +148,21 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.box-select {
+  background-color: #7b5180;
+  border: solid #fff 6px;
+  padding: calc(1rem - 6px);
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+}
+
+.link-select {
+  background-color: #7b5180;
+  border: solid #fff 3px;
+  border-radius: 40%;
+  padding: 0 calc(1rem - 3px);
+  transition-property: transform, background;
+  transition-duration: 0.3s;
 }
