@@ -28,6 +28,7 @@ body {
   padding: 0.5rem 0;
 }
 
+
 h1 {
   color: #fff;
   font-family: "Oswald", sans-serif;
@@ -178,6 +179,8 @@ hr {
   transition-duration: 0.3s;
 }
 
+/* CONTACT PAGE  */
+
 form {
   display: table;
   margin: auto;
@@ -218,6 +221,26 @@ button {
   background-color: #cc2d2d;
   transition-property: transform, background;
   transition-duration: 0.3s;
+}
+
+@media (max-width: 400px) {
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  width: 58vw;
+}
+
+label { 
+  font-size: 1rem;
+  max-width: 30vw;
+}
+
+.table-row {
+  display: table-row;
+  max-width: 100vw;
+  text-align: left;
+}
 }
 
 /* PROJECTS PAGE */
@@ -330,8 +353,9 @@ img.scrapbook {
 @media (max-width: 400px) {
   .projects-container {
     width: 80vw;
-    height: 96vh;
+    height: 200vh;
     grid-template-columns: 80vw;
     grid-row: auto auto auto auto;
+    text-align: center;
   }
 }
