@@ -8,17 +8,24 @@ body {
   text-align: center;
 }
 
-.header, .footer {
+.index-header, .header,
+.footer {
   background-color: #59405c;
   width: 100%;
   margin: 0;
-  padding: 0.5rem 0;
   position: relative;
-  top: 0;
+}
+
+.index-header {
+  padding: 0.5rem 0 2rem;
 }
 
 .header {
-  padding: 0.5rem 0 4rem;
+  padding: 0.5rem 0 1rem;
+}
+
+.footer {
+  padding: 0.5rem 0;
 }
 
 h1 {
@@ -87,14 +94,16 @@ hr {
 
 .first-line {
   bottom: 0.8rem;
-  width: 60%
+  width: 60%;
 }
 
- .footer-line {
+.footer-line {
   bottom: 1.3rem;
 }
 
-.hobbies-line, .contact-line, .links-line {
+.hobbies-line,
+.contact-line,
+.links-line {
   bottom: 0.8rem;
 }
 
@@ -108,7 +117,7 @@ hr {
   font-size: 1rem;
 }
 
-.container {
+.links-container {
   margin: 20px auto;
   width: 400px;
   height: 400px;
@@ -120,14 +129,16 @@ hr {
 }
 
 @media (max-width: 400px) {
-  .container {
-  width: 80vw;
-  height: 96vh;
-  grid-template-columns: 80vw;
-  grid-row: auto auto auto auto;
+  .links-container {
+    width: 80vw;
+    height: 96vh;
+    grid-template-columns: 80vw;
+    grid-row: auto auto auto auto;
   }
 
-  p, li, .link {
+  p,
+  li,
+  .link {
     font-size: 1.5rem;
   }
 
@@ -177,8 +188,150 @@ form {
   text-align: right;
 }
 
-input, label, textarea {
+input,
+label,
+textarea {
   display: table-cell;
   padding: 0 1rem;
   width: 12rem;
+}
+
+button {
+  background-color: #000;
+  border: 0;
+  border-radius: 0 50% 0 50%;
+  color: #fff;
+  display: table-cell;
+  font-family: "Oswald";
+  margin: 0 1rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#submit-button:hover {
+  background-color: #2dcc43;
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+}
+
+#clear-button:hover {
+  background-color: #cc2d2d;
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+}
+
+/* PROJECTS PAGE */
+
+.projects-container {
+  margin: 20px auto;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.card {
+  background-color: #59405c;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+#pokememory {
+  border-radius: 10px 0% 0% 0%;
+}
+
+.pokememory {
+  background-color: #ff577f;
+}
+
+img.pokememory {
+  background-color: #ff577f;
+  border: 7px dotted #2dcc43;
+  height: 150px;
+  width: 150px;
+}
+
+.pokememory-select {
+  background-color: #fd7a99;
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+}
+
+#simon {
+  border-radius: 0% 10px 0% 0%;
+}
+
+.simon {
+  background-color: #011f3f;
+}
+
+img.simon {
+  background-color: #011f3f;
+  border: 7px dotted #fff;
+  height: 150px;
+  width: 150px;
+}
+
+.simon-select {
+  background-color: #194e88;
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+}
+
+#dice {
+  border-radius: 0% 0% 0% 10px;
+}
+
+.dice {
+  background-color: #111d5e;
+}
+
+img.dice {
+  background-color: #111d5e;
+  border: 7px dotted #fff;
+  height: 150px;
+  width: 150px;
+}
+
+.dice-select {
+  background-color: #37417e;
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+}
+
+#scrapbook {
+  color: #000;
+  border-radius: 0% 0% 10px 0%;
+}
+
+.scrapbook {
+  background-color: #c878e4;
+}
+
+img.scrapbook {
+  background-color: #c878e4;
+  border: 7px dotted #7fffd4;
+  height: 150px;
+  width: 150px;
+}
+
+.scrapbook-select {
+  background-color: #cd97e0;
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+}
+
+@media (max-width: 400px) {
+  .projects-container {
+    width: 80vw;
+    height: 96vh;
+    grid-template-columns: 80vw;
+    grid-row: auto auto auto auto;
+  }
 }

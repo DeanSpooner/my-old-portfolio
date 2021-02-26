@@ -20,7 +20,7 @@ let box = document.getElementsByClassName('box');
         })
       }
 
-let submit = document.getElementById("submit-button");
+let submit = document.getElementById("submit-button")
 
 let clear = document.getElementById("clear-button");
 
@@ -34,6 +34,7 @@ function clearFunc() {
     document.getElementById("user-name").value = "";
     document.getElementById("user-email").value = "";
     document.getElementById("user-message").value = "";
+    return;
 }    
 
 submit.addEventListener("click", submitFunc, false);
