@@ -48,8 +48,7 @@ a {
 }
 
 .current {
-  background-color: #000;
-  border-radius: 40%;
+  text-decoration: underline;
 }
 
 img {
@@ -172,9 +171,9 @@ hr {
 }
 
 .link-select {
-  background-color: #4f1e55;
+  background-color: #000;
   border: solid #fff 3px;
-  border-radius: 40%;
+  border-radius: 40% 0 40% 0;
   padding: 0 calc(1rem - 3px);
   transition-property: transform, background;
   transition-duration: 0.3s;
